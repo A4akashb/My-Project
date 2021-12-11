@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#flex-container{
+    background-color: blanchedalmond;
+    height: 80vh;
+    width: 27vw;
+    box-shadow: -5px 5px 5px 5px rgba(44, 48, 44, 0.705),
+    5px 5px 5px rgba(58, 61, 58, 0.747);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+#display input[type="text"]{
+    width: 24vw;
+    margin-top: 5%;
+    margin-left: 4%;
+    height: 8vh;
+    text-align: right;
+    padding: 15px;
+    font-size: large;
+}
+#flex-child{
+    display: flex;
+    flex-direction: row;
+}
+.row{
+    padding-left: 25px;
+    padding-top: 18px;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 110%;
+    width: 15%;
+    height: 80%;
+    margin: 18px;
+    justify-content: space-between;
+}
+.lrow{
+    padding-left: 25px;
+    padding-top: 18px;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(234, 243, 243);
+    display: flex;
+    border-radius: 110%;
+    width: 22%;
+    height: 80%;
+    margin: 18px;
+    justify-content: space-between;
+
+    /* align-content: center;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(234, 243, 243);
+    display: flex;
+    border-radius: 110%;
+    width: 30%;
+    height: 100%;
+    margin: 5px;
+    margin-left: 10px;
+    justify-content: space-evenly; */
+}
+p{
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+    padding-left: 75px;
+    background-color: rgb(234, 243, 243);
+    margin: 15px;
+    height: 90%;
+    width: 72%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+h1{
+    text-align: center;
+}
+
+/* body{
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+#flex-container{
+    margin: 20%;
+    display: flex;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    height: 40vh;
+    width: 30vw;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#flex-child{
+    background-color: cadetblue;
+    border: 1px solid black;
+    width: 5vw;
+    height: 8vh;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+#display input[type="text"]{
+    width: 25vw;
+    height: 6vh;
+}
+#f{
+    border: 1px solid black;
+    margin: 50%;
+} */
+

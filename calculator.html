@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/calculator1.css" />
+  </head>
+  <body>
+    <div id="flex-container">
+      <h1>Calculator</h1>
+      <div id="display">
+        <input type="text" name="" id="output" placeholder="0" />
+      </div>
+      <br />
+      <div id="flex-child">
+        <div class="row" onclick="display('&#8592')">&#8592</div>
+        <div class="row" onclick="clear()">C</div>
+        <div class="row" onclick="display('%')">%</div>
+        <div class="row" onclick="display('/')">/</div>
+      </div>
+      <div id="flex-child">
+        <div class="row" onclick="display('7')">7</div>
+        <div class="row" onclick="display('8')">8</div>
+        <div class="row" onclick="display('9')">9</div>
+        <div class="row" onclick="display('*')">*</div>
+      </div>
+      <div id="flex-child">
+        <div class="row" onclick="display('4')">4</div>
+        <div class="row" onclick="display('5')">5</div>
+        <div class="row" onclick="display('6')">6</div>
+        <div class="row" onclick="display('-')">-</div>
+      </div>
+      <div id="flex-child">
+        <div class="row" onclick="display('1')">1</div>
+        <div class="row" onclick="display('2')">2</div>
+        <div class="row" onclick="display('3')">3</div>
+        <div class="row" onclick="display('+')">+</div>
+      </div>
+      <div id="flex-child">
+        <div class="lrow" onclick="display('0')">0</div>
+        <div class="lrow" onclick="display('.')">.</div>
+        <p onclick="calc()">=</p>
+      </div>
+    </div>
+
+    <script>
+      let output=document.getElementById("output");
+
+      function display(num){
+        output.value += num; 
+      }
+
+      function calc(){
+        try{
+          output.value = eval(output.value);
+        }
+        catch(err){
+          alert("fuck you");
+        }
+      }
+
+    const clear=()=>console.log("sdc");
+    </script>
+  </body>
+</html>
